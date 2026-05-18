@@ -55,23 +55,25 @@
   <section id="hero">
     <div class="hero-inner">
       <div>
-        <div class="hero-badge">🎮 Open to Game Dev Opportunities</div>
+        <div class="hero-badge">🟢 Open to Unity Game Dev Roles</div>
         <h1 class="hero-name">Tushar<br><span class="accent">Lathiya</span></h1>
-        <div class="hero-role">Unity Game Developer</div>
-        <p class="hero-summary">Motivated Game Developer with hands-on experience creating 2D/3D games in Unity using
-          C#. Strong in OOP, gameplay scripting, UI, and basic game physics. Familiar with Git and design patterns — a
-          fast learner with a creative mindset, eager to contribute to a game development team.</p>
+        <div class="hero-role" id="hero-role">Unity Game Developer<span class="cursor-blink">|</span></div>
+        <p class="hero-summary">Unity Game Developer with <strong>15+ shipped titles</strong> and real-world industry experience. Specialized in 2D/3D mobile games, smooth DOTween animations, real-time multiplayer via Photon PUN 2, and AdMob monetization. Currently building and publishing games at <span style="color:var(--accent);">Nested Solution</span>.</p>
+        <div class="hero-specs">
+          <span class="spec-chip">🎯 2D / 3D Unity</span>
+          <span class="spec-chip">📱 Android Published</span>
+          <span class="spec-chip">🌐 Photon Multiplayer</span>
+          <span class="spec-chip">💰 AdMob Monetized</span>
+        </div>
         <div class="hero-ctas">
-          <a href="#experience" class="btn-primary">View Experience</a>
+          <a href="#projects" class="btn-primary">View Games</a>
           <a href="TusharLathiya.pdf" download="Tushar Lathiya" class="btn-secondary">Download Resume</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-card">
           <div class="hero-card-inner">
-            <div style="font-family:'JetBrains Mono',monospace;DISPLAY: flex;
-    gap: 5px;    ALIGN-ITEMS: center;    font-size: 12px;
-    font-weight: 600;color:var(--text3);margin-bottom:0.4rem;">
+            <div style="font-family:'JetBrains Mono',monospace;display:flex;gap:5px;align-items:center;font-size:12px;font-weight:600;color:var(--text3);margin-bottom:0.4rem;">
               <p class="inner-main-text">#</p> Developer.stats</div>
             <div class="stat-grid">
               <div class="stat-item">
@@ -116,7 +118,7 @@
       <div class="impact-chip"><span class="impact-icon">🎮</span>
         <div>
           <div class="impact-num">15+</div>
-          <div class="impact-label">Unity Games Created</div>
+          <div class="impact-label">Unity Games Shipped</div>
         </div>
       </div>
       <div class="impact-chip"><span class="impact-icon">🧩</span>
@@ -125,22 +127,28 @@
           <div class="impact-label">Levels Designed</div>
         </div>
       </div>
-      <div class="impact-chip"><span class="impact-icon">💰</span>
+      <div class="impact-chip"><span class="impact-icon">📱</span>
         <div>
-          <div class="impact-num">AdMobs</div>
-          <div class="impact-label">Monetization Integrated</div>
-        </div>
-      </div>
-      <div class="impact-chip"><span class="impact-icon">🚀</span>
-        <div>
-          <div class="impact-num">Published</div>
-          <div class="impact-label">Games Live on Android</div>
+          <div class="impact-num">Android</div>
+          <div class="impact-label">Games Published</div>
         </div>
       </div>
       <div class="impact-chip"><span class="impact-icon">🌐</span>
         <div>
           <div class="impact-num">Photon</div>
-          <div class="impact-label">Multiplayer Networking</div>
+          <div class="impact-label">Real-Time Multiplayer</div>
+        </div>
+      </div>
+      <div class="impact-chip"><span class="impact-icon">💰</span>
+        <div>
+          <div class="impact-num">AdMob</div>
+          <div class="impact-label">Monetization Live</div>
+        </div>
+      </div>
+      <div class="impact-chip"><span class="impact-icon">⚡</span>
+        <div>
+          <div class="impact-num">DOTween</div>
+          <div class="impact-label">Smooth Animations</div>
         </div>
       </div>
     </div>
@@ -169,7 +177,7 @@
             </div>
           </div>
         
-          <div class="exp-body open" id="body1" style="display: block;">
+          <div class="exp-body open" id="body1">
             <div class="exp-body-inner">
               <ul class="exp-bullets">
                 <li><i class="fa-solid fa-dice-one dice-icon"></i> Developed and published Unity games with smooth performance and deployment.</li>
@@ -219,58 +227,67 @@
         including 2D, 3D, puzzle, and physics-based projects. Worked on complete game development with animations and
         particle systems; more projects are available on GitHub.</p>
       <div class="projects-grid">
-        <div class="project-card reveal box-game-portfolio" style="align-items: flex-start;">
+
+        <div class="project-card reveal box-game-portfolio card-accent-green">
+          <div class="project-header-row">
+            <span class="project-badge badge-published">✦ PUBLISHED</span>
+            <span class="project-badge badge-type">2D · PUZZLE</span>
+          </div>
           <div class="project-title">🎨 Colorwood Block – Sort Puzzle</div>
-          <p class="project-desc">Developed a unique color-based puzzle game with 500+ levels, featuring smooth DOTween
-            animations, particle effects, and engaging gameplay. Implemented sound effects and background music to
-            enhance user experience and fun.</p>
-          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span
-              class="project-tag">DOTween</span><span class="project-tag">Puzzle</span><span
-              class="project-tag">2D</span><span class="project-tag">Audio</span></div>
+          <p class="project-desc">Color-based puzzle game with <strong>500+ hand-crafted levels</strong>. Built complete game loop with DOTween animations, particle systems, SFX/BGM, and optimized for smooth Android performance.</p>
+          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span class="project-tag">DOTween</span><span class="project-tag">Puzzle</span><span class="project-tag">2D</span><span class="project-tag">Audio</span><span class="project-tag">Android</span></div>
         </div>
-        <div class="project-card reveal box-game-portfolio" style="align-items: flex-start;">
-          <div class="project-title">🚌 Crowd Pickup Jam Game</div>
-          <p class="project-desc">Developed a 3D mobile game in Unity with color-matching bus gameplay. Implemented
-            character movement, spawning, bus seating systems, and smooth animations using DoTween. Created and
-            optimized 500+ engaging levels for Android devices.</p>
-          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span
-              class="project-tag">3D</span><span class="project-tag">DoTween</span><span
-              class="project-tag">Android</span><span class="project-tag">Mobile</span></div>
+
+        <div class="project-card reveal box-game-portfolio card-accent-green">
+          <div class="project-header-row">
+            <span class="project-badge badge-published">✦ PUBLISHED</span>
+            <span class="project-badge badge-type">3D · MOBILE</span>
+          </div>
+          <div class="project-title">🚌 Crowd Pickup Jam</div>
+          <p class="project-desc">3D mobile game with color-matching bus mechanics. Built character spawning, bus seating logic, and DOTween animations across <strong>500+ optimized levels</strong> deployed to Android.</p>
+          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span class="project-tag">3D</span><span class="project-tag">DOTween</span><span class="project-tag">Android</span><span class="project-tag">Mobile</span></div>
         </div>
-        <div class="project-card reveal box-game-portfolio" style="align-items: flex-start;">
+
+        <div class="project-card reveal box-game-portfolio card-accent-orange">
+          <div class="project-header-row">
+            <span class="project-badge badge-personal">◈ PERSONAL</span>
+            <span class="project-badge badge-type">3D · ACTION</span>
+          </div>
           <div class="project-title">🕹️ Third-Person Character Controller</div>
-          <p class="project-desc">Developed a third-person 3D mobile game in Unity with joystick controls, implementing
-            player movement, camera follow system, animations, and interactive gameplay.</p>
-          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span
-              class="project-tag">3D</span><span class="project-tag">Mobile</span><span
-              class="project-tag">Joystick</span><span class="project-tag">Camera</span></div>
+          <p class="project-desc">Full third-person controller system with virtual joystick input, camera rig, blend-tree animations, and interactive environment — built as a reusable mobile game foundation.</p>
+          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span class="project-tag">3D</span><span class="project-tag">Mobile</span><span class="project-tag">Joystick</span><span class="project-tag">Camera</span></div>
         </div>
-        <div class="project-card reveal box-game-portfolio" style="align-items: flex-start;">
+
+        <div class="project-card reveal box-game-portfolio card-accent-purple">
+          <div class="project-header-row">
+            <span class="project-badge badge-multi">⬡ MULTIPLAYER</span>
+            <span class="project-badge badge-type">2D · ONLINE</span>
+          </div>
           <div class="project-title">♟️ Multiplayer Tic-Tac-Toe</div>
-          <p class="project-desc">Developed a real-time multiplayer Tic-Tac-Toe game in Unity using C# and Photon PUN 2,
-            implementing matchmaking, synchronized gameplay, turn-based logic, and win/lose detection with a clean UI.
-          </p>
-          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span
-              class="project-tag">Photon PUN 2</span><span class="project-tag">Multiplayer</span><span
-              class="project-tag">Networking</span></div>
+          <p class="project-desc">Real-time online multiplayer with Photon PUN 2 — custom matchmaking, synchronized game state, turn validation, and win/draw detection with clean UI flow.</p>
+          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span class="project-tag">Photon PUN 2</span><span class="project-tag">Multiplayer</span><span class="project-tag">Networking</span></div>
         </div>
-        <div class="project-card reveal box-game-portfolio" style="align-items: flex-start;">
-          <div class="project-title">🧟 StupidZombies Game</div>
-          <p class="project-desc">Developed a Stupid Zombies–style 2D shooting puzzle game in Unity using C#, featuring
-            physics-based projectile mechanics, enemy elimination logic, level design, and scoring for engaging
-            gameplay.</p>
-          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span
-              class="project-tag">2D</span><span class="project-tag">Physics</span><span
-              class="project-tag">Puzzle</span><span class="project-tag">Level Design</span></div>
-        </div>        
+
+        <div class="project-card reveal box-game-portfolio card-accent-orange">
+          <div class="project-header-row">
+            <span class="project-badge badge-personal">◈ PERSONAL</span>
+            <span class="project-badge badge-type">2D · SHOOTER</span>
+          </div>
+          <div class="project-title">🧟 StupidZombies Clone</div>
+          <p class="project-desc">Physics-based 2D shooting puzzle inspired by StupidZombies. Built custom projectile physics, ricochet logic, enemy elimination, level progression, and score tracking from scratch.</p>
+          <div class="project-tags"><span class="project-tag">Unity</span><span class="project-tag">C#</span><span class="project-tag">2D</span><span class="project-tag">Physics</span><span class="project-tag">Puzzle</span><span class="project-tag">Level Design</span></div>
+        </div>
+
       </div>
       <hr>
-      <div class="project-card reveal box-game-portfolio github-repo-wrapper" style="border-color:rgba(123,47,255,0.3);background:rgba(123,47,255,0.04);">
+      <div class="project-card reveal box-game-portfolio github-repo-wrapper" style="border-color:rgba(123,47,255,0.3);background:rgba(123,47,255,0.04);cursor:default;">
           <div class="project-title" style="color:var(--accent2);">📁 More on GitHub</div>
           <p class="project-desc">Explore the full portfolio of 15+ Unity games — 2D, 3D, puzzle, and physics-based
             projects with complete game development cycles including animations and particle systems.</p>
-          <div class="project-tags"><span class="project-tag">GitHub</span><span class="project-tag">Open
-              Source</span><span class="project-tag">Unity</span><span class="project-tag">+10 More</span></div>
+          <div class="project-tags"><span class="project-tag">GitHub</span><span class="project-tag">Open Source</span><span class="project-tag">Unity</span><span class="project-tag">+10 More</span></div>
+          <div style="margin-top:1.1rem;">
+            <a href="https://github.com/TushharLathiya" target="_blank" class="btn-secondary" style="font-size:0.72rem;padding:0.4rem 1rem;display:inline-flex;align-items:center;gap:0.5rem;"><i class="fa-brands fa-github"></i> View GitHub Profile</a>
+          </div>
         </div>
     </div>
   </section>
@@ -282,41 +299,100 @@
       <h2 class="section-title reveal">Tech <span>Stack</span></h2>
       <div class="section-line reveal"></div>
       <div class="skills-grid">
-        <div class="skill-group reveal" style="flex-direction: column;align-items: flex-start;">
-          <div class="skill-group-title">Languages</div>
-          <div class="skill-tags"><span class="skill-tag">C</span><span class="skill-tag">C++</span><span
-              class="skill-tag">Java</span><span class="skill-tag">C#</span><span class="skill-tag">JavaScript</span>
+
+        <!-- GAME DEV — full width with skill bars -->
+        <div class="skill-group reveal skill-group--primary skill-group--gamedev">
+          <div class="skill-group-title">🎮 Game Development</div>
+
+          <div class="skills-sub-label">Core Skills</div>
+          <div class="core-skills-row">
+            <div class="core-skill">
+              <div class="core-skill-name"><span>Unity</span><span class="skill-level">Expert</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="core-skill">
+              <div class="core-skill-name"><span>C#</span><span class="skill-level">Expert</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="core-skill">
+              <div class="core-skill-name"><span>DOTween</span><span class="skill-level">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+            </div>
+            <div class="core-skill">
+              <div class="core-skill-name"><span>Photon PUN 2</span><span class="skill-level">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+            </div>
+            <div class="core-skill">
+              <div class="core-skill-name"><span>Unity UI</span><span class="skill-level">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div>
+            </div>
+          </div>
+
+          <div class="skills-sub-label">Also Used</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Particle Systems</span>
+            <span class="skill-tag">Google AdMob</span>
+            <span class="skill-tag">In-App Purchases</span>
+            <span class="skill-tag">Physics Engine</span>
+            <span class="skill-tag">Android Build</span>
+            <span class="skill-tag">Level Design</span>
           </div>
         </div>
-        <div class="skill-group reveal" style="flex-direction: column;align-items: flex-start;">
-          <div class="skill-group-title">Game Development</div>
-          <div class="skill-tags"><span class="skill-tag">Unity</span><span class="skill-tag">DOTween</span><span
-              class="skill-tag">Photon PUN 2</span><span class="skill-tag">Particle Systems</span><span
-              class="skill-tag">Unity UI</span><span class="skill-tag">Google AdMobs</span><span
-              class="skill-tag">In-App Purchases</span></div>
+
+        <!-- OTHER GROUPS -->
+        <div class="skill-group reveal skill-group--lang">
+          <div class="skill-group-title">💻 Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--highlight">C#</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
         </div>
-        <div class="skill-group reveal" style="flex-direction: column;align-items: flex-start;">
-          <div class="skill-group-title">Backend & Database</div>
-          <div class="skill-tags"><span class="skill-tag">Node.js</span><span class="skill-tag">Express.js</span><span
-              class="skill-tag">MongoDB</span><span class="skill-tag">REST APIs</span></div>
+
+        <div class="skill-group reveal skill-group--concepts">
+          <div class="skill-group-title">🧠 Concepts</div>
+          <div class="skill-tags">
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Design Patterns</span>
+            <span class="skill-tag">Gameplay Scripting</span>
+            <span class="skill-tag">Game Physics</span>
+            <span class="skill-tag">DSA</span>
+          </div>
         </div>
-        <div class="skill-group reveal" style="flex-direction: column;align-items: flex-start;">
-          <div class="skill-group-title">Tools</div>
-          <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span
-              class="skill-tag">Visual Studio</span><span class="skill-tag">VS Code</span></div>
+
+        <div class="skill-group reveal skill-group--tools">
+          <div class="skill-group-title">🔧 Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
         </div>
-        <div class="skill-group reveal" style="flex-direction: column;align-items: flex-start;">
-          <div class="skill-group-title">Soft Skills</div>
-          <div class="skill-tags"><span class="skill-tag">Problem-Solving</span><span
-              class="skill-tag">Debugging</span><span class="skill-tag">Teamwork</span><span class="skill-tag">Fast
-              Learner</span><span class="skill-tag">Creative Mindset</span></div>
+
+        <div class="skill-group reveal skill-group--backend">
+          <div class="skill-group-title">🌐 Backend & Database</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
         </div>
-        <div class="skill-group reveal" style="flex-direction: column;align-items: flex-start;">
-          <div class="skill-group-title">Concepts</div>
-          <div class="skill-tags"><span class="skill-tag">OOP</span><span class="skill-tag">Design Patterns</span><span
-              class="skill-tag">Gameplay Scripting</span><span class="skill-tag">Game Physics</span><span
-              class="skill-tag">DSA</span><span class="skill-tag">Responsive Layouts</span></div>
+
+        <div class="skill-group reveal skill-group--soft">
+          <div class="skill-group-title">🤝 Soft Skills</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem-Solving</span>
+            <span class="skill-tag">Debugging</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Fast Learner</span>
+            <span class="skill-tag">Creative Mindset</span>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -327,49 +403,73 @@
       <div class="section-tag reveal"><p class="inner-main-text">#</p>Education</div>
       <h2 class="section-title reveal">Education & <span>Certifications</span></h2>
       <div class="section-line reveal"></div>
-      <div class="edu-grid reveal">
-        <div class="edu-card" style="width: 50%;" >
-          <div style="font-size:2rem;margin-bottom:0.7rem;">🎓</div>
-          <div class="edu-degree">Bachelor of Computer Engineering</div>
-          <div class="edu-school">Gandhinagar Institute of Technology</div>
-          <div class="edu-year">2021 – 2025</div>
+
+      <!-- Education Cards -->
+      <div class="edu-grid">
+
+        <div class="edu-card reveal edu-card--primary">
+          <div class="edu-type-badge">🎓 Bachelor's Degree</div>
+          <div class="edu-degree">Computer Engineering</div>
+          <div class="edu-school"><i class="fa-solid fa-building-columns" style="margin-right:0.4rem;font-size:0.8rem;"></i>Gandhinagar Institute of Technology</div>
+          <div class="edu-footer">
+            <span class="edu-year"><i class="fa-regular fa-calendar" style="margin-right:0.35rem;"></i>2021 – 2025</span>
+            <span class="edu-status edu-status--done">✓ Graduated</span>
+          </div>
         </div>
-        <div class="edu-card" style="width: 50%;">
-          <div style="font-size:2rem;margin-bottom:0.7rem;">📖</div>
-          <div class="edu-degree">HSC (Higher Secondary Certificate)</div>
-          <div class="edu-school">PP Savani</div>
-          <div class="edu-year">2020 – 2021</div>
+
+        <div class="edu-card reveal edu-card--secondary">
+          <div class="edu-type-badge">📖 Higher Secondary</div>
+          <div class="edu-degree">HSC — Science Stream</div>
+          <div class="edu-school"><i class="fa-solid fa-school" style="margin-right:0.4rem;font-size:0.8rem;"></i>PP Savani</div>
+          <div class="edu-footer">
+            <span class="edu-year"><i class="fa-regular fa-calendar" style="margin-right:0.35rem;"></i>2020 – 2021</span>
+            <span class="edu-status edu-status--done">✓ Completed</span>
+          </div>
         </div>
+
       </div>
+
+      <!-- Certifications -->
       <div style="margin-top:3rem;">
-        <div class="section-tag reveal" style="margin-bottom:1rem;"><p class="inner-main-text">#</p> Certifications</div>
-        <div class="cert-item reveal">
-          <div class="cert-badge">🏆</div>
-          <div>
-            <div class="cert-name">Problem Solving through Programming in C</div>
-            <div class="cert-org">NPTEL</div>
+        <div class="section-tag reveal" style="margin-bottom:1.5rem;"><p class="inner-main-text">#</p> Certifications</div>
+        <div class="cert-grid">
+
+          <div class="cert-card reveal cert-silver">
+            <span class="cert-tier-label">SILVER</span>
+            <div class="cert-icon-wrap" style="background:linear-gradient(135deg,rgba(0,245,212,0.15),rgba(0,245,212,0.05));border-color:rgba(0,245,212,0.3);">🏆</div>
+            <div class="cert-content">
+              <div class="cert-name">Problem Solving via Programming in C</div>
+              <div class="cert-org">NPTEL</div>
+            </div>
           </div>
-        </div>
-        <div class="cert-item reveal">
-          <div class="cert-badge">☕</div>
-          <div>
-            <div class="cert-name">Programming in Java</div>
-            <div class="cert-org">NPTEL</div>
+
+          <div class="cert-card reveal cert-silver">
+            <span class="cert-tier-label">SILVER</span>
+            <div class="cert-icon-wrap" style="background:linear-gradient(135deg,rgba(123,47,255,0.15),rgba(123,47,255,0.05));border-color:rgba(123,47,255,0.3);">☕</div>
+            <div class="cert-content">
+              <div class="cert-name">Programming in Java</div>
+              <div class="cert-org">NPTEL</div>
+            </div>
           </div>
-        </div>
-        <div class="cert-item reveal">
-          <div class="cert-badge">🧠</div>
-          <div>
-            <div class="cert-name">DSA with Java</div>
-            <div class="cert-org">APNA College</div>
+
+          <div class="cert-card reveal cert-silver">
+            <span class="cert-tier-label">SILVER</span>
+            <div class="cert-icon-wrap" style="background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(245,158,11,0.05));border-color:rgba(245,158,11,0.3);">🧠</div>
+            <div class="cert-content">
+              <div class="cert-name">DSA with Java</div>
+              <div class="cert-org">APNA College</div>
+            </div>
           </div>
-        </div>
-        <div class="cert-item reveal">
-          <div class="cert-badge">🎮</div>
-          <div>
-            <div class="cert-name">Unity Game Development</div>
-            <div class="cert-org">CDMI</div>
+
+          <div class="cert-card reveal cert-gold">
+            <span class="cert-tier-label">GOLD</span>
+            <div class="cert-icon-wrap" style="background:linear-gradient(135deg,rgba(255,107,53,0.15),rgba(255,107,53,0.05));border-color:rgba(255,107,53,0.3);">🎮</div>
+            <div class="cert-content">
+              <div class="cert-name">Unity Game Development</div>
+              <div class="cert-org">CDMI</div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -378,10 +478,9 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-wrap" style="text-align:center;">
-      <div class="section-tag reveal" style="justify-content: center;"><p class="inner-main-text">#</p>let's_connectlet</div>
-      <h2 class="section-title reveal" style="margin-bottom:0.5rem;justify-content: center;">Ready to <span>Level Up</span> Your Team?</h2>
-      <p class="reveal" style="color:var(--text2);margin:0 auto 2.5rem;max-width:480px;font-size:0.97rem;">Open to Unity
-        Game Developer roles. Let's build something incredible together.</p>
+      <div class="section-tag reveal" style="justify-content: center;"><p class="inner-main-text">#</p>let's_connect</div>
+      <h2 class="section-title reveal" style="margin-bottom:0.5rem;justify-content: center;">Let's Build the <span>Next Hit Game</span></h2>
+      <p class="reveal" style="color:var(--text2);margin:0 auto 2.5rem;max-width:500px;font-size:0.97rem;">Open to Unity Game Developer roles — full-time or contract. Whether you're shipping a mobile title, building multiplayer, or need someone who can take a game from prototype to Play Store, let's talk.</p>
       <div class="reveal" style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:2rem;">
         <a href="mailto:tusharlathiya0008@gmail.com" class="btn-primary">📧 tusharlathiya0008@gmail.com</a>
         <a href="tel:+918140990008" class="btn-secondary">📱 +91 8140990008</a>
@@ -408,8 +507,7 @@
         Lathiya</div>
       <div style="color:var(--text2);font-size:0.85rem;margin-bottom:1.4rem;">Unity Game Developer · B.E. Computer
         Engineering · 15+ Games</div>
-      <a href="TusharLathiya.pdf" download="Tushar Lathiya"><button class="btn-primary">⬇ Generate & Download
-          Resume</button></a>
+      <a href="TusharLathiya.pdf" download="Tushar Lathiya"><button class="btn-primary">⬇ Download Resume</button></a>
     </div>
   </section>
 

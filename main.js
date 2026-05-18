@@ -81,6 +81,13 @@ function toggleExp(id) {
 }
 window.toggleExp = toggleExp;
 
+// sync icon state with any body that starts open
+document.querySelectorAll('.exp-body.open').forEach(function (body) {
+    var num = body.id.replace('body', '');
+    var icon = document.getElementById('icon' + num);
+    if (icon) icon.style.transform = 'rotate(180deg)';
+});
+
 // COUNTER ANIMATION
 function runCounters() {
     document.querySelectorAll('[data-count]').forEach(function (el) {
@@ -97,6 +104,43 @@ document.getElementById('burgerBtn').addEventListener('click', function () {
 });
 function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
 window.closeMobile = closeMobile;
+
+// TYPING ANIMATION
+(function () {
+    var roles = ['Unity Game Developer', 'C# Game Programmer', 'Mobile Game Dev', '2D / 3D Game Creator'];
+    var el = document.getElementById('hero-role');
+    var cursor = el.querySelector('.cursor-blink');
+    var idx = 0, charIdx = roles[0].length, deleting = false;
+    function tick() {
+        var current = roles[idx];
+        if (!deleting) {
+            charIdx++;
+            if (charIdx > current.length) { deleting = true; setTimeout(tick, 1800); return; }
+        } else {
+            charIdx--;
+            if (charIdx < 0) { deleting = false; idx = (idx + 1) % roles.length; charIdx = 0; }
+        }
+        el.firstChild.textContent = current.slice(0, charIdx);
+        setTimeout(tick, deleting ? 38 : 75);
+    }
+    setTimeout(tick, 2200);
+})();
+
+// ACTIVE NAV HIGHLIGHT
+(function () {
+    var navLinks = document.querySelectorAll('.nav-links a');
+    var sectionIds = ['hero', 'experience', 'projects', 'skills', 'education', 'contact'];
+    window.addEventListener('scroll', function () {
+        var current = 'hero';
+        sectionIds.forEach(function (id) {
+            var el = document.getElementById(id);
+            if (el && window.scrollY >= el.offsetTop - 120) current = id;
+        });
+        navLinks.forEach(function (a) {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+        });
+    });
+})();
 
 // RESUME GENERATOR
 function generateResume() {
