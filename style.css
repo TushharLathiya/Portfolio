@@ -1208,10 +1208,13 @@ i.fa-solid.fa-phone.icon-space {
     /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
-      padding: 3rem 2rem;
-      text-align: center;
+      padding: 5rem 2rem 4rem;
       position: relative;
       z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
     }
 
     .footer-name {
@@ -1219,27 +1222,51 @@ i.fa-solid.fa-phone.icon-space {
       font-size: 1.1rem;
       font-weight: 700;
       color: var(--accent);
-      margin-bottom: 0.4rem;
+      text-align: center;
     }
 
-    .footer-links {
+    .footer-tagline {
+      font-size: 0.82rem;
+      color: var(--text2);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-icons {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-top: 1.3rem;
+      gap: 1rem;
+      margin-bottom: 1.8rem;
     }
 
-    .footer-links a {
+    .footer-icons a {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: var(--text2);
+      font-size: 0.95rem;
       text-decoration: none;
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      transition: color 0.2s;
+      transition: all 0.3s;
     }
 
-    .footer-links a:hover {
+    .footer-icons a:hover {
+      border-color: var(--accent);
       color: var(--accent);
+      box-shadow: var(--glow);
+      transform: translateY(-2px);
+    }
+
+    .footer-copy {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text3);
+      text-align: center;
+      margin-top: 0.5rem;
+      padding-bottom: 1rem;
     }
 
     /* REVEAL */
