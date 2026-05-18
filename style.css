@@ -351,22 +351,12 @@ div#icon1 {
       }
     }
 
-    @keyframes glitch {
-      0%, 82%, 100% { transform: none; filter: none; }
-      83% { transform: translate(-3px, 1px) skewX(-2deg); filter: hue-rotate(70deg); }
-      84% { transform: translate(3px, -1px) skewX(2deg); filter: hue-rotate(-70deg); }
-      85% { transform: none; filter: none; }
-      86% { transform: translate(-2px, 0); filter: hue-rotate(40deg); }
-      87% { transform: none; filter: none; }
-    }
-
     .hero-name {
       font-family: 'Orbitron', monospace;
       font-size: clamp(2.4rem, 5vw, 4.2rem);
       font-weight: 900;
       line-height: 1.1;
       margin-bottom: 0.4rem;
-      animation: glitch 7s ease-in-out infinite;
     }
 
     .hero-name .accent {

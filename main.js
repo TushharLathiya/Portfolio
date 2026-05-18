@@ -1,4 +1,8 @@
 
+// Always start at top on page load/refresh
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
 // ANIMATED BACKGROUND
 (function () {
     var c = document.getElementById('bg-canvas'), ctx = c.getContext('2d');
