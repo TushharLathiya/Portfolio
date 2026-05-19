@@ -927,6 +927,18 @@ i.fa-solid.fa-phone.icon-space {
       color: var(--accent3);
     }
 
+    .badge-working {
+      background: rgba(245, 200, 0, 0.12);
+      border: 1px solid rgba(245, 200, 0, 0.45);
+      color: #f5c800;
+      animation: working-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes working-pulse {
+      0%, 100% { box-shadow: 0 0 0px rgba(245,200,0,0); }
+      50% { box-shadow: 0 0 8px rgba(245,200,0,0.4); }
+    }
+
     .badge-multi {
       background: rgba(123, 47, 255, 0.12);
       border: 1px solid rgba(123, 47, 255, 0.4);
@@ -973,6 +985,12 @@ i.fa-solid.fa-phone.icon-space {
       transform: translateY(-4px);
       box-shadow: var(--glow);
     }
+
+    .project-extra { display: none; }
+
+    #show-more-btn { transition: all 0.3s; }
+    #show-more-icon { transition: transform 0.3s; }
+    #show-more-icon.rotated { transform: rotate(180deg); }
 
     .card-click-hint {
       display: inline-flex;
@@ -1473,6 +1491,38 @@ i.fa-solid.fa-phone.icon-space {
       gap: 0.7rem;
       padding-top: 1rem;
       border-top: 1px solid var(--border);
+    }
+
+    /* LANDSCAPE PHONE MODAL */
+    .modal-box.landscape .modal-layout {
+      grid-template-columns: 400px 1fr;
+    }
+
+    .modal-box.landscape .modal-left {
+      width: 100%;
+    }
+
+    .modal-box.landscape .phone-mockup {
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
+      border-radius: 18px;
+      flex-direction: row;
+      padding: 10px 14px;
+      gap: 12px;
+    }
+
+    .modal-box.landscape .phone-notch {
+      width: 8px;
+      height: 50px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .modal-box.landscape .phone-screen {
+      aspect-ratio: 16/9;
+      border-radius: 10px;
+      flex: 1;
     }
 
     @media(max-width:640px) {

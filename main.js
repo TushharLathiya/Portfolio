@@ -156,6 +156,7 @@ function openModal(card) {
     var playstore  = (card.dataset.playstore || '').trim();
     var github     = (card.dataset.github || '').trim();
     var link       = (card.dataset.link || '').trim();
+    var landscape  = card.dataset.landscape === 'true';
 
     document.getElementById('modal-badges').innerHTML = badgesEl ? badgesEl.innerHTML : '';
     document.getElementById('modal-title').innerHTML  = title;
@@ -192,6 +193,13 @@ function openModal(card) {
     linksEl.innerHTML = links;
     linksEl.style.display = links ? 'flex' : 'none';
 
+    var modalBox = document.querySelector('#project-modal .modal-box');
+    if (landscape) {
+        modalBox.classList.add('landscape');
+    } else {
+        modalBox.classList.remove('landscape');
+    }
+
     document.getElementById('project-modal').classList.add('open');
     document.body.style.overflow = 'hidden';
 }
@@ -216,6 +224,18 @@ document.addEventListener('keydown', function (e) {
 
 window.openModal = openModal;
 window.closeModal = closeModal;
+
+// SHOW MORE PROJECTS
+function toggleMoreProjects() {
+    var extras = document.querySelectorAll('.project-extra');
+    var icon = document.getElementById('show-more-icon');
+    var label = document.getElementById('show-more-label');
+    var isHidden = extras[0].style.display === 'none' || extras[0].style.display === '';
+    extras.forEach(function(el) { el.style.display = isHidden ? 'block' : 'none'; });
+    icon.classList.toggle('rotated', isHidden);
+    label.textContent = isHidden ? 'Show Less' : 'More Projects';
+}
+window.toggleMoreProjects = toggleMoreProjects;
 
 // RESUME GENERATOR
 function generateResume() {
