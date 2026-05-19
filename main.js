@@ -146,6 +146,77 @@ window.closeMobile = closeMobile;
     });
 })();
 
+// PROJECT MODAL
+function openModal(card) {
+    var badgesEl   = card.querySelector('.project-header-row');
+    var title      = card.querySelector('.project-title').innerHTML;
+    var desc       = card.querySelector('.project-desc').innerHTML;
+    var tags       = card.querySelector('.project-tags').innerHTML;
+    var videoId    = (card.dataset.video || '').trim();
+    var playstore  = (card.dataset.playstore || '').trim();
+    var github     = (card.dataset.github || '').trim();
+    var link       = (card.dataset.link || '').trim();
+
+    document.getElementById('modal-badges').innerHTML = badgesEl ? badgesEl.innerHTML : '';
+    document.getElementById('modal-title').innerHTML  = title;
+    document.getElementById('modal-desc').innerHTML   = desc;
+    document.getElementById('modal-tags').innerHTML   = tags;
+
+    // video
+    var videoWrap   = document.getElementById('modal-video-wrap');
+    var videoEl     = document.getElementById('modal-video');
+    var noVideo     = document.getElementById('modal-no-video');
+    if (videoId && !videoId.startsWith('YOUR_')) {
+        videoEl.src = videoId;
+        videoEl.load();
+        videoWrap.classList.add('has-video');
+        noVideo.style.display = 'none';
+    } else {
+        videoEl.src = '';
+        videoWrap.classList.remove('has-video');
+        noVideo.style.display = 'flex';
+    }
+
+    // links
+    var links = '';
+    if (playstore && !playstore.startsWith('YOUR_')) {
+        links += '<a href="' + playstore + '" target="_blank" class="btn-primary" style="font-size:0.75rem;padding:0.45rem 1rem;display:inline-flex;align-items:center;gap:0.5rem;"><i class="fa-brands fa-google-play"></i> Play Store</a>';
+    }
+    if (github && !github.startsWith('YOUR_')) {
+        links += '<a href="' + github + '" target="_blank" class="btn-secondary" style="font-size:0.75rem;padding:0.45rem 1rem;display:inline-flex;align-items:center;gap:0.5rem;"><i class="fa-brands fa-github"></i> GitHub Repo</a>';
+    }
+    if (link && !link.startsWith('YOUR_')) {
+        links += '<a href="' + link + '" target="_blank" class="btn-secondary" style="font-size:0.75rem;padding:0.45rem 1rem;display:inline-flex;align-items:center;gap:0.5rem;"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Link</a>';
+    }
+    var linksEl = document.getElementById('modal-links');
+    linksEl.innerHTML = links;
+    linksEl.style.display = links ? 'flex' : 'none';
+
+    document.getElementById('project-modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    document.getElementById('project-modal').classList.remove('open');
+    var v = document.getElementById('modal-video');
+    v.pause();
+    v.src = '';
+    document.body.style.overflow = '';
+}
+
+// close on backdrop click
+document.getElementById('project-modal').addEventListener('click', function (e) {
+    if (e.target === this) closeModal();
+});
+
+// close on Escape key
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeModal();
+});
+
+window.openModal = openModal;
+window.closeModal = closeModal;
+
 // RESUME GENERATOR
 function generateResume() {
     var w = window.open('', '_blank');
