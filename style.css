@@ -946,8 +946,16 @@ i.fa-solid.fa-phone.icon-space {
     /* PROJECTS */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.3rem;
+    }
+
+    @media (max-width: 900px) {
+      .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 580px) {
+      .projects-grid { grid-template-columns: 1fr; }
     }
 
     .project-card {
@@ -964,6 +972,29 @@ i.fa-solid.fa-phone.icon-space {
       border-color: var(--accent);
       transform: translateY(-4px);
       box-shadow: var(--glow);
+    }
+
+    .card-click-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 1.8rem;
+      font-size: 0.72rem;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.03em;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 0.25s, transform 0.25s;
+    }
+
+    .card-click-hint i {
+      font-size: 0.65rem;
+    }
+
+    .project-card:hover .card-click-hint {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .project-title {
