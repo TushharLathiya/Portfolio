@@ -160,9 +160,12 @@ div#icon1 {
 
     .nav-logo {
       font-family: 'Orbitron', monospace;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: 700;
-      color: var(--accent);
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .nav-links {
