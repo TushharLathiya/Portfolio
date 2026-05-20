@@ -1702,6 +1702,11 @@ hr{
 
     /* RESPONSIVE */
     @media(max-width:768px) {
+      .card-click-hint {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
       .hero-inner {
         grid-template-columns: 1fr;
       }
