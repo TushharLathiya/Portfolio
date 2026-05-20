@@ -305,10 +305,11 @@ div#icon1 {
 
     /* HERO */
     #hero {
-      min-height: 100vh;
+      min-height: 100svh;
       display: flex;
       align-items: center;
       padding-top: 80px;
+      padding-bottom: 3rem;
     }
 
     .hero-inner {
@@ -395,7 +396,7 @@ div#icon1 {
       font-size: 1rem;
       line-height: 1.85;
       margin-bottom: 2.5rem;
-      text-align: justify;
+      text-align: left;
       max-width: 470px;
     }
 
@@ -1099,7 +1100,7 @@ i.fa-solid.fa-phone.icon-space {
       color: var(--text2);
       line-height: 1.75;
       margin-bottom: 0.9rem;
-      text-align: justify;
+      text-align: left;
     }
 
     .project-tags {
