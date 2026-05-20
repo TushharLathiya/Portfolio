@@ -60,7 +60,11 @@ div#icon1 {
     /* SPLASH */
     #splash {
       position: fixed;
-      inset: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
       z-index: 1000;
       background: var(--bg);
       display: flex;
@@ -1093,18 +1097,21 @@ i.fa-solid.fa-phone.icon-space {
 
     .project-title {
       font-family: 'Orbitron', monospace;
-      font-size: 0.82rem;
+      font-size: clamp(0.75rem, 1.2vw, 0.9rem);
       font-weight: 700;
       color: var(--accent);
       margin-bottom: 0.7rem;
+      word-break: break-word;
     }
 
     .project-desc {
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: var(--text2);
-      line-height: 1.75;
+      line-height: 1.65;
       margin-bottom: 0.9rem;
       text-align: left;
+      word-break: break-word;
+      overflow-wrap: break-word;
     }
 
     .project-tags {
