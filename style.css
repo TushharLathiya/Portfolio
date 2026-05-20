@@ -305,11 +305,10 @@ div#icon1 {
 
     /* HERO */
     #hero {
-      min-height: 100svh;
       display: flex;
       align-items: center;
-      padding-top: 80px;
-      padding-bottom: 3rem;
+      padding-top: 120px;
+      padding-bottom: 5rem;
     }
 
     .hero-inner {
